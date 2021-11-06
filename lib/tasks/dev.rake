@@ -1,8 +1,7 @@
-namespace :utils do
+namespace :dev do
 
-  desc "Insert Data on Database for Development"
+  desc "Insert Data on database from development"
   task data: :environment do
-    
     confirm = "." * 10 + "OK"
 
     Faker::Config.locale = "pt-BR"

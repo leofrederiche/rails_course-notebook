@@ -11,6 +11,8 @@
     </div>
   <% end %>
 
+  <p>Ola</p>
+
   <div class="field">
     <%= form.label :name %>
     <%= form.text_field :name %>
@@ -25,6 +27,23 @@
     <%= form.label :kind_id %>
     <%= collection_select(:contact, :kind_id, @kinds_option_select, :id, :description) %>
   </div>
+
+  <%= form.fields_for :address do |address_fields| %>    
+    <div class="field">
+      <%= address_fields.label :street %>
+      <%= address_fields.text_field :street %>      
+    </div>
+
+    <div class="field">
+      <%= address_fields.label :city %>
+      <%= address_fields.text_field :city %>
+    </div>
+
+    <div class="field">
+      <%= address_fields.label :state %>
+      <%= address_fields.text_field :state %>
+    </div>
+  <% end %>
 
   <div class="field">
     <%= form.label :rmk %>

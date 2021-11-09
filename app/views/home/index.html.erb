@@ -1,20 +1,22 @@
 <h1>Hello World</h1>
+<h2><%= t "hello" %></h2>
+<h2><%= l Date.today %></h2>
 <p>I learning Rails</p>
 
 <ul>
     <li>
-        <%= link_to "Contatos", contacts_path %>
+        <%= link_to Contact.model_name.human, contacts_path %>
     </li>
 
     <li>
-        <%= link_to "Endereços", addresses_path %>
+        <%= link_to Address.model_name.human, addresses_path %>
     </li>
 
     <li>
-        <%= link_to "Telefones", phones_path %>
+        <%= link_to Phone.model_name.human, phones_path %>
     </li>
 
     <li>
-        <%= link_to "Tipos", kinds_path %>
+        <%= link_to Kind.model_name.human, kinds_path %>
     </li>
 </ul>

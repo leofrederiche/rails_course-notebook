@@ -1,22 +1,22 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong><%= Contact.human_attribute_name("name") %>:</strong>
   <%= @contact.name %>
 </p>
 
 <p>
-  <strong>Email:</strong>
+  <strong><%= Contact.human_attribute_name("email") %>:</strong>
   <%= @contact.email %>
 </p>
 
 <p>
-  <strong>Kind:</strong>
+  <strong><%= Contact.human_attribute_name("kind") %>:</strong>
   <%= @contact.kind_id %>
 </p>
 
 <p>
-  <strong>Rmk:</strong>
+  <strong><%= Contact.human_attribute_name("rmk") %>:</strong>
   <%= @contact.rmk %>
 </p>
 

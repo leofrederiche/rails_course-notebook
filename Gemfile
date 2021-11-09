@@ -3,6 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.2'
 
+# Centralization of locale data collection for Ruby on Rails.
+gem 'rails-i18n', '~> 6.0.0' # For 6.0.0 or higher
+
 # This gem is a port of Perl's Data::Faker library that generates fake data.
 gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 

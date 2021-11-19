@@ -1,7 +1,6 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Contacts</h1>
-<%= @my_name %>
 
 <table>
   <thead>
@@ -19,8 +18,7 @@
       <tr>
         <td><%= contact.name %></td>
         <td><%= contact.email %></td>
-        <td><%= contact.kind_id %></td>
-        <td><%= contact.rmk %></td>
+        <td><%= contact.kind.description %></td>
         <td><%= link_to 'Show', contact %></td>
         <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
         <td><%= link_to 'Destroy', contact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -32,5 +30,3 @@
 <br>
 
 <%= link_to 'New Contact', new_contact_path %>
-
-<%= render partial: "/contacts/shared/test", locals: { local_value: "Test Value from Partial" } %>

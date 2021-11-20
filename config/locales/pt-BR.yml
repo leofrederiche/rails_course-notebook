@@ -1,2 +1,8 @@
 "pt-BR":
   hello: "Olá Mundo"
+  buttons:
+    show: "Mostrar"
+    edit: "Alterar"
+    destroy: "Excluir"
+  messages:
+    confirm: "Tem certeza do que está fazendo?"

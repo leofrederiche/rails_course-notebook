@@ -3,7 +3,7 @@ class ContactsController < ApplicationController
 
   # GET /contacts or /contacts.json
   def index
-    @contacts = Contact.all
+    @contacts = Contact.all      
     @my_name = "Leonardo Camp"
   end
 
@@ -75,7 +75,7 @@ class ContactsController < ApplicationController
     def contact_params
       params.require(:contact).permit(
         :name, :email, :kind_id, :rmk, 
-        address_attributes: [:street, :city, :state]
+        address_attributes: [:street, :city, :state, :_destroy]
       )
     end
 end

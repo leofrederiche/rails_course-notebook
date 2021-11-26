@@ -45,6 +45,12 @@
     </div>
   <% end %>
 
+  <div id="phones">
+    <%= form.fields_for :phones do |phones_fields| %>    
+      <%= render partial: 'phone_fields', locals: { phones_fields: phones_fields } %>
+    <% end %>
+  </div>
+
   <div class="field">
     <%= form.label :rmk %>
     <%= form.text_area :rmk %>

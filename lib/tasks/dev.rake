@@ -38,10 +38,12 @@ namespace :dev do
 
     puts "Seeding Phones"
     Contact.all.map do |contact|
-        Phone.create(
-            phone: Faker::PhoneNumber.cell_phone,
-            contact: contact
-        )
+        Random.rand(1..5) do |i|
+            Phone.create(
+                phone: Faker::PhoneNumber.cell_phone,
+                contact: contact
+            )
+        end
     end
     puts confirm
   end

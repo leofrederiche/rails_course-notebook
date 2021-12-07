@@ -3,20 +3,20 @@
 <h2><%= l Date.today %></h2>
 <p>I learning Rails</p>
 
-<ul>
+<ul class="menu-home">
     <li>
-        <%= link_to Contact.model_name.human, contacts_path %>
+        <%= link_to Contact.model_name.human, contacts_path, class: "action" %>
     </li>
 
     <li>
-        <%= link_to Address.model_name.human, addresses_path %>
+        <%= link_to Address.model_name.human, addresses_path, class: "action" %>
     </li>
 
     <li>
-        <%= link_to Phone.model_name.human, phones_path %>
+        <%= link_to Phone.model_name.human, phones_path, class: "action" %>
     </li>
 
     <li>
-        <%= link_to Kind.model_name.human, kinds_path %>
+        <%= link_to Kind.model_name.human, kinds_path, class: "action" %>
     </li>
 </ul>

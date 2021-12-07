@@ -1,3 +1,37 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+@import "_base.scss";
+
+$border-color: #333;
+
+.menu-home {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.menu-home li {
+    list-style: none;
+}
+
+.action {
+    border-radius: 5px;
+    padding: 30px 60px;
+    text-decoration: none;
+    font-style: none;
+    background: $blue;
+    color: $white;
+    transition: $transition;
+    font-weight: bold;
+    color: $white;
+}
+
+.action:hover {
+    background-color: $primary;
+    color: $light;
+}

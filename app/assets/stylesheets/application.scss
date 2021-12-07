@@ -13,3 +13,37 @@
  *= require_tree .
  *= require_self
  */
+
+@import "_base.scss";
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $lightback;
+}
+
+table {
+    width: 80%;
+    border: 1px solid $primary;
+    background: $white;
+    margin: 0;
+}
+
+th {
+    background: $primary;
+    color: $light;
+}
+
+tr {
+    height: 50px;
+}
+
+input[type=submit] {
+    background: $primary;
+    color: $light;
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid $primary;    
+}

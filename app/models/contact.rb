@@ -3,6 +3,6 @@ class Contact < ApplicationRecord
   has_one :address, dependent: :destroy
   has_many :phones, dependent: :destroy
 
-  accepts_nested_attributes_for :address, update_only: true
-  accepts_nested_attributes_for :phones, update_only: true, reject_if: :all_blank
+  accepts_nested_attributes_for :address, update_only: true, allow_destroy: true
+  accepts_nested_attributes_for :phones, update_only: true, reject_if: :all_blank, allow_destroy: true
 end

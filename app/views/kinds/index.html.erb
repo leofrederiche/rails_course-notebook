@@ -12,7 +12,7 @@
 
   <tbody>
     <% @kinds.each do |kind| %>
-      <tr>
+      <tr style="background: <%= cycle '#FFF', '#ddd' %>">
         <td><%= kind.description %></td>
         <td><%= link_to 'Show', kind %></td>
         <td><%= link_to 'Edit', edit_kind_path(kind) %></td>

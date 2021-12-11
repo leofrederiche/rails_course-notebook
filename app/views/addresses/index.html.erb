@@ -15,7 +15,7 @@
 
   <tbody>
     <% @addresses.each do |address| %>
-      <tr>
+      <tr style="background: <%= cycle '#FFF', '#ddd' %>">
         <td><%= address.street %></td>
         <td><%= address.city %></td>
         <td><%= address.state %></td>

@@ -6,3 +6,10 @@
     destroy: "Excluir"
   messages:
     confirm: "Tem certeza do que está fazendo?"
+  views:
+    pagination:
+      first: "<<"
+      last: ">>"
+      previous: "<"
+      next: ">"
+      truncate: "..."

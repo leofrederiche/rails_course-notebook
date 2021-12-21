@@ -15,7 +15,7 @@ namespace :dev do
 
 
     puts "Seeding Contacts"
-    10.times do |index|
+    100.times do |index|
         Contact.create(
             name: Faker::Name.name,
             email: Faker::Internet.email,

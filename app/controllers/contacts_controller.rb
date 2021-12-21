@@ -3,7 +3,7 @@ class ContactsController < ApplicationController
 
   # GET /contacts or /contacts.json
   def index
-    @contacts = Contact.all      
+    @contacts = Contact.order(:name).page(params[:page]).per(5)
     @my_name = "Leonardo Camp"
   end
 

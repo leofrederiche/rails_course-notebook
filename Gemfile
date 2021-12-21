@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.2'
 
+gem "kaminari"
+
 gem "cocoon"
 
 # Centralization of locale data collection for Ruby on Rails.
